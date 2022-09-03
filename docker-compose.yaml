@@ -9,6 +9,7 @@ services:
       - bit-strapi
     ports:
       - 3000:3000
+      - 8085:8085
     environment:
       - BIT_ORG=rwransky
       - WORKSPACE_DIRECTORY=bit
