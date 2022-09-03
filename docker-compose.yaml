@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  bit-strapi:
+    container_name: bit-strapi
+    image: rwransky/bit-docker
+    volumes:
+      - ./bit:/bit
+    networks:
+      - bit-strapi
+    ports:
+      - 3000:3000
+    environment:
+      - BIT_ORG=rwransky
+      - WORKSPACE_DIRECTORY=bit
+      - WORKSPACE_TEMPLATE=react
+      - DEFAULT_SCOPE=bit-strapi
+      - INIT_WORKSPACE=false
+      - REPORT_ANALYTICS=false
+      - REPORT_ERRORS=false
+      - NO_WARNINGS=true
+
+networks:
+  bit-strapi:
