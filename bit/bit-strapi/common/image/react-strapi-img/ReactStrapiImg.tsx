@@ -47,6 +47,17 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
   );
   const filename = url ? url.replace(/^.*[\\/]/, "").split(".")[0] : "";
 
+  // Construct Placeholder Source if needed and available
+  let placeholderSrc = '';
+  if (placeholder || context.placeholder) {
+    if (formats && formats.medium) {
+      placeholderSrc = formats.medium.url;
+    } else if (formats && formats.small) {
+      placeholderSrc = formats.small.url;
+    }
+  }
+  
+
   const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible] = useIntersectionObserver({
     elementRef: ref,
@@ -87,10 +98,10 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
       height={height}
       proportionalHeight={proportionalHeight || context.proportionalHeight}
     >
-      {(placeholder || context.placeholder) && formats && formats.base64 && (
+      {(placeholder || context.placeholder) && placeholderSrc.length>0 && (
         <Placeholder
           url={url}
-          base64={formats.base64.url}
+          src={placeholderSrc}
           objectFit={objectFit || context.objectFit || "cover"}
           objectPosition={objectPosition || context.objectPosition || "center"}
           stylePlaceholder={context.stylePlaceholder + stylePlaceholder}

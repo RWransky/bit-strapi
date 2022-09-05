@@ -4,7 +4,7 @@ import { ObjectFit } from "./types";
 import styled from "styled-components";
 
 interface Props {
-  base64: string;
+  src: string;
   url: string;
   objectFit: ObjectFit;
   objectPosition: string;
@@ -39,7 +39,7 @@ const StyledPlaceholder = styled.img<StyledProps>`
 `;
 
 const Placeholder: React.FC<Props> = ({
-  base64,
+  src,
   url,
   objectFit,
   objectPosition,
@@ -49,7 +49,7 @@ const Placeholder: React.FC<Props> = ({
   return (
     !imageFinished && (
       <StyledPlaceholder
-        src={base64}
+        src={src}
         alt={`Placeholder for the image "${url}".`}
         objectFit={objectFit}
         objectPosition={objectPosition}
