@@ -14,31 +14,63 @@ export type ObjectFit =
   | "scale-down"
   | undefined;
 
+type Ext = 
+  ".jpg"
+  | ".png"
+  | ".tiff"
+  | ".webp"
+  | ".gif"
+  | ".ico"
+  | ".svg";
+
+type Mime = 
+  "image/jpg" 
+  | "image/png" 
+  | "image/tiff" 
+  | "image/webp"
+  | "image/gif" 
+  | "image/ico" 
+  | "image/svg";
+
 export interface Format {
+  ext?: Ext;
   url: string;
-  name?: string;
   hash?: string;
+  mime?: Mime;
+  name?: string;
+  path?: null;
+  size?: number;
   width?: number;
   height?: number;
-  size?: number;
-  path?: null;
-  mime?: "image/jpg" | "image/png" | "image/webp";
-  ext?: ".jpg" | ".png" | ".webp";
 }
 
 export type Formats = {
-  ["base64"]?: Format;
-  [breakpoint: number]: Format | Format[];
+  large?: Format;
+  small?: Format;
+  medium?: Format;
+  thumbnail?: Format;
 };
 
 export interface ContextProps {
-  objectFit?: ObjectFit;
-  objectPosition?: string;
+  name?: string;
+  alternativeText?: string;
+  caption?: string;
   width?: number;
   height?: number;
+  hash?: string;
+  ext?: Ext;
+  mime?: Mime;
+  size?: number;
+  previewUrl?: string;
+  provider?: string;
+  provider_metadata?: Object;
+  createdAt?: string;
+  updatedAt?: string;
+  related?: Object;
+  objectFit?: ObjectFit;
+  objectPosition?: string;
   proportionalHeight?: number;
   placeholder?: boolean;
-  alternativeText?: string;
   className?: string;
   style?: string;
   stylePlaceholder?: string;

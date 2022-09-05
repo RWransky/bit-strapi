@@ -1,100 +1,68 @@
 {
-	"HeroImage": {
-		"data": {
-			"id": 2,
-			"attributes": {
-				"name": "severance-100-night-1920.jpg",
-				"alternativeText": "severance-100-night-1920.jpg",
-				"caption": "severance-100-night-1920.jpg",
-				"width": 1920,
-				"height": 1280,
-				"formats": {
-					"large": {
-						"ext": ".jpg",
-						"url": "https://tco-strapi-images.s3.amazonaws.com/large_severance_100_night_1920_d3db1f51e8.jpg",
-						"hash": "large_severance_100_night_1920_d3db1f51e8",
-						"mime": "image/jpeg",
-						"name": "large_severance-100-night-1920.jpg",
-						"path": null,
-						"size": 150.02,
-						"width": 1000,
-						"height": 667
-					},
-					"small": {
-						"ext": ".jpg",
-						"url": "https://tco-strapi-images.s3.amazonaws.com/small_severance_100_night_1920_d3db1f51e8.jpg",
-						"hash": "small_severance_100_night_1920_d3db1f51e8",
-						"mime": "image/jpeg",
-						"name": "small_severance-100-night-1920.jpg",
-						"path": null,
-						"size": 41.37,
-						"width": 500,
-						"height": 333
-					},
-					"medium": {
-						"ext": ".jpg",
-						"url": "https://tco-strapi-images.s3.amazonaws.com/medium_severance_100_night_1920_d3db1f51e8.jpg",
-						"hash": "medium_severance_100_night_1920_d3db1f51e8",
-						"mime": "image/jpeg",
-						"name": "medium_severance-100-night-1920.jpg",
-						"path": null,
-						"size": 87.7,
-						"width": 750,
-						"height": 500
-					},
-					"thumbnail": {
-						"ext": ".jpg",
-						"url": "https://tco-strapi-images.s3.amazonaws.com/thumbnail_severance_100_night_1920_d3db1f51e8.jpg",
-						"hash": "thumbnail_severance_100_night_1920_d3db1f51e8",
-						"mime": "image/jpeg",
-						"name": "thumbnail_severance-100-night-1920.jpg",
-						"path": null,
-						"size": 10.65,
-						"width": 234,
-						"height": 156
-					}
-				},
-				"hash": "severance_100_night_1920_d3db1f51e8",
-				"ext": ".jpg",
-				"mime": "image/jpeg",
-				"size": 819.42,
-				"url": "https://tco-strapi-images.s3.amazonaws.com/severance_100_night_1920_d3db1f51e8.jpg",
-				"previewUrl": null,
-				"provider": "aws-s3",
-				"provider_metadata": null,
-				"createdAt": "2022-04-07T01:05:50.344Z",
-				"updatedAt": "2022-04-07T01:05:50.344Z",
-				"related": {
-					"data": [
-						{
-							"id": 1,
-							"attributes": {
-								"__type": "api::program-notes-landing.program-notes-landing",
-								"Title": "Program Notes",
-								"Description": "{\"time\":1653415353781,\"blocks\":[{\"id\":\"FynJ5JKAbN\",\"type\":\"paragraph\",\"data\":{\"text\":\"I am the landing page for program notes! Yayyyyyyyyyy\"}}],\"version\":\"2.23.2\"}",
-								"publish_at": "2022-07-02T04:00:00.000Z",
-								"createdAt": "2022-05-24T18:02:57.066Z",
-								"updatedAt": "2022-06-06T20:17:03.688Z",
-								"publishedAt": null,
-								"locale": "en"
-							}
-						},
-						{
-							"id": 3,
-							"attributes": {
-								"__type": "api::concert-card.concert-card",
-								"imgAlt": "Severance Hall",
-								"href": "https://www.clevelandorchestra.com/attend/seasons-and-series/",
-								"createdAt": "2022-04-07T01:06:51.293Z",
-								"updatedAt": "2022-04-07T01:06:51.293Z",
-								"publishedAt": null,
-								"tag": "default",
-								"uid": "concert-card"
-							}
-						}
-					]
-				}
-			}
-		}
-	}
-}
+	"data": {
+        "id": 225,
+        "attributes": {
+            "name": "miku.jpeg",
+            "alternativeText": "Pastel Hatsune Miku",
+            "caption": "Pastel Hatsune Miku",
+            "width": 1080,
+            "height": 1920,
+            "formats": {
+                "large": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/large_miku_43caf2b601.jpeg",
+                    "hash": "large_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "large_miku.jpeg",
+                    "path": null,
+                    "size": 172.81,
+                    "width": 563,
+                    "height": 1000
+                },
+                "small": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/small_miku_43caf2b601.jpeg",
+                    "hash": "small_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "small_miku.jpeg",
+                    "path": null,
+                    "size": 48.15,
+                    "width": 281,
+                    "height": 500
+                },
+                "medium": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/medium_miku_43caf2b601.jpeg",
+                    "hash": "medium_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "medium_miku.jpeg",
+                    "path": null,
+                    "size": 104.79,
+                    "width": 422,
+                    "height": 750
+                },
+                "thumbnail": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/thumbnail_miku_43caf2b601.jpeg",
+                    "hash": "thumbnail_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_miku.jpeg",
+                    "path": null,
+                    "size": 4.87,
+                    "width": 88,
+                    "height": 156
+                }
+            },
+            "hash": "miku_43caf2b601",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "size": 932.92,
+            "url": "https://tco-strapi-images.s3.amazonaws.com/miku_43caf2b601.jpeg",
+            "previewUrl": null,
+            "provider": "aws-s3",
+            "provider_metadata": null,
+            "createdAt": "2022-09-05T03:06:43.781Z",
+            "updatedAt": "2022-09-05T03:07:22.771Z"
+        }
+    }
+ }
