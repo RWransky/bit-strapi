@@ -1,1 +1,1 @@
-export { Image } from './image';
+export { StrapiImage } from './image';

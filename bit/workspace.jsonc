@@ -46,14 +46,16 @@
         "eslint-plugin-jest": "24.4.0",
         "eslint-plugin-jsx-a11y": "6.4.1",
         "eslint-plugin-mdx": "1.15.0",
-        "eslint-plugin-react": "7.25.1"
+        "eslint-plugin-react": "7.25.1",
+        "styled-components": "5.3.5"
       },
       "peerDependencies": {
         "@testing-library/react": "^12.1.5",
         "react": "17.0.2",
         "react-dom": "17.0.2"
       }
-    }
+    },
+    "linkCoreAspects": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your

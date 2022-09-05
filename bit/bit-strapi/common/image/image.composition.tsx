@@ -1,6 +1,9 @@
 import React from 'react';
-import { Image } from './image';
+import { StrapiImage } from './image';
+import imageJSON from './test/image.json';
 
-export const BasicImage = () => (
-  <Image text="hello from Image" />
+export const BasicStrapiImage = ({ data = imageJSON.HeroImage.data.attributes }) => (
+  <div>
+    <StrapiImage attributes={data} />
+  </div>
 );
