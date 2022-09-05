@@ -44,6 +44,10 @@ export interface Format {
   height?: number;
 }
 
+export const validFormats = [
+  "large","small","medium","thumbnail"
+];
+
 export type Formats = {
   large?: Format;
   small?: Format;

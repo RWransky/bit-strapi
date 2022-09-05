@@ -1,5 +1,5 @@
 // adapted from react-strapi-img
-import { Formats, Format } from "./types";
+import { Formats, Format, validFormats } from "./types";
 import stringEndsWith from "./stringEndsWith";
 
 function getFormat(
@@ -22,11 +22,11 @@ function getSrcSet(
   if (!formats) return null;
   const formatsNormalized = Object.keys(formats)
     .filter((key) => {
-      return !!parseInt(key);
+      return validFormats.includes(key);
     })
     .map((key) => {
       const format = getFormat(formats[key], webp);
-      return format ? { width: parseInt(key), url: format.url } : null;
+      return format ? { width: format.width, url: format.url } : null;
     })
     .filter((format) => format);
 
