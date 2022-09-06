@@ -1,11 +1,52 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { BasicImage } from './image.composition';
+import { 
+  BasicStrapiJpegImage, 
+  BasicStrapiGifImage, 
+  BasicStrapiWebpImage,
+  BasicStrapiJpegNoPlaceholderImage
+} from './image.composition';
 
 
-it('should render with the correct text', () => {
-  const { getByText } = render(<BasicImage />);
-  const rendered = getByText('hello from Image');
+it('should render jpeg with the correct alt text', () => {
+  const { getByAltText } = render(<BasicStrapiJpegImage />);
+  const rendered = getByAltText('Pastel Hatsune Miku');
   expect(rendered).toBeTruthy();
+});
+
+it('should render gif with the correct alt text', () => {
+  const { getByAltText } = render(<BasicStrapiGifImage />);
+  const rendered = getByAltText('Watermelon Miku');
+  expect(rendered).toBeTruthy();
+});
+
+it('should render webp with the correct alt text', () => {
+  const { getByAltText } = render(<BasicStrapiWebpImage />);
+  const rendered = getByAltText('2020 Hatsune Miku Magical Mirai');
+  expect(rendered).toBeTruthy();
+});
+
+it('should render jpeg with the correct placeholder src', () => {
+  render(<BasicStrapiJpegImage />);
+  const displayedImage = document.querySelector("img") as HTMLImageElement;
+  expect(displayedImage.src).toContain("https://tco-strapi-images.s3.amazonaws.com/thumbnail_miku_43caf2b601.jpeg");
+});
+
+it('should render jpeg without placeholder src', () => {
+  render(<BasicStrapiJpegNoPlaceholderImage />);
+  const displayedImage = document.querySelector("img") as HTMLImageElement;
+  expect(displayedImage.src).toContain("data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
+});
+
+it('should render gif with default src prior to render', () => {
+  render(<BasicStrapiGifImage />);
+  const displayedImage = document.querySelector("img") as HTMLImageElement;
+  expect(displayedImage.src).toContain("data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
+});
+
+it('should render webp with placeholder src', () => {
+  render(<BasicStrapiWebpImage />);
+  const displayedImage = document.querySelector("img") as HTMLImageElement;
+  expect(displayedImage.src).toContain("https://tco-strapi-images.s3.amazonaws.com/thumbnail_Miku_Mirai_9c3a6f634c.webp");
 });
 
