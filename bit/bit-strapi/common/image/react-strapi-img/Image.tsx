@@ -18,6 +18,7 @@ interface Props {
   styleImg?: string;
   setImageFinished: React.Dispatch<React.SetStateAction<boolean>>;
   imageFinished: boolean;
+  usePlaceholder: boolean;
   onLoad?: (event: SyntheticEvent<HTMLImageElement, Event>) => void;
   onError?: (event: SyntheticEvent<HTMLImageElement, Event>) => void;
   onDecode: () => void;
@@ -36,6 +37,7 @@ const Image: React.FC<Props> = ({
   sizes,
   setImageFinished,
   imageFinished,
+  usePlaceholder,
   onDecode,
   onLoad,
   onError,
@@ -78,6 +80,7 @@ const Image: React.FC<Props> = ({
     <StyledImage
       onTransitionEnd={() => setImageFinished(true)}
       imageFinished={imageFinished}
+      usePlaceholder={usePlaceholder}
       onLoad={handleLoad}
       onError={handleError}
       src={source}

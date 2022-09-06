@@ -8,6 +8,7 @@ interface Props {
   alt: string;
   loaded: boolean;
   imageFinished: boolean;
+  usePlaceholder: boolean;
   className?: string;
   sizes?: string;
   objectFit?: ObjectFit;
@@ -25,8 +26,8 @@ const StyledImage = styled.img<Props>`
   bottom: 0;
   left: 0;
   right: 0;
-  width: ${(props) => (props.imageFinished ? '100%' : 0)};
-  height: ${(props) => (props.imageFinished ? '100%' : 0)};
+  width: ${(props) => (props.usePlaceholder ? (props.imageFinished ? '100%' : 0) : '100%')};
+  height: ${(props) => (props.usePlaceholder ? (props.imageFinished ? '100%' : 0) : '100%')};
   transition: opacity 0.5s ease-in-out;
   opacity: ${(props) => (props.loaded ? 1 : 0)};
   ${(props) => props.styleImg};

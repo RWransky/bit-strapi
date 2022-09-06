@@ -50,8 +50,8 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
   // Construct Placeholder Source if needed and available
   let placeholderSrc = '';
   if (placeholder || context.placeholder) {
-    if (formats && formats.medium) {
-      placeholderSrc = formats.medium.url;
+    if (formats && formats.thumbnail) {
+      placeholderSrc = formats.thumbnail.url;
     } else if (formats && formats.small) {
       placeholderSrc = formats.small.url;
     }
@@ -89,6 +89,8 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
     }
   }, [isVisible]);
 
+  const usePlaceholder = (placeholder || context.placeholder) && placeholderSrc.length>0;
+
   return (
     <Wrapper
       ref={ref}
@@ -98,7 +100,7 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
       height={height}
       proportionalHeight={proportionalHeight || context.proportionalHeight}
     >
-      {(placeholder || context.placeholder) && placeholderSrc.length>0 && (
+      { usePlaceholder && (
         <Placeholder
           url={url}
           src={placeholderSrc}
@@ -111,6 +113,7 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
       <Image
         setImageFinished={setImageFinished}
         imageFinished={imageFinished}
+        usePlaceholder={usePlaceholder}
         onLoad={handleLoad}
         onError={handleError}
         onDecode={handleDecode}

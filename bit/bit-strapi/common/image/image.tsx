@@ -6,7 +6,7 @@ export function StrapiImage({
   attributes,
   preserveAspectRatio = false,
   style: styleOverride,
-  ...props,
+  ...props
 }: Types.ImageProps) {
 
 

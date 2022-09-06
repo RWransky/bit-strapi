@@ -14,15 +14,20 @@ const highResData = highResJSON.data.attributes;
 export const BasicStrapiImage = (props) => (
   <div>
     <StrapiImage attributes={highResData} />
+    <StrapiImage attributes={highResData} placeholder={false}/>
     <StrapiImage attributes={imgData} />
     <StrapiImage attributes={gifData} />
     <StrapiImage attributes={webpData} />
   </div>
 );
 
-exprt const BasicStrapiJpegImage = (props) => {
+export const BasicStrapiJpegImage = (props) => (
   <StrapiImage attributes={imgData} />
-}
+);
+
+export const BasicStrapiJpegNoPlaceholderImage = (props) => (
+  <StrapiImage attributes={imgData} placeholder={false} />
+);
 
 export const BasicStrapiWebpImage = (props) => (
   <StrapiImage attributes={webpData} />
