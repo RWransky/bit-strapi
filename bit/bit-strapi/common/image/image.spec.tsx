@@ -6,7 +6,19 @@ import {
   BasicStrapiWebpImage,
   BasicStrapiJpegNoPlaceholderImage
 } from './image.composition';
+import getSrcSets from './react-strapi-img/getSrcSets';
+import imageJSON from './test/image.json';
+import gifJSON from './test/gif.json';
 
+it('should generate srcsets for jpeg image', () => {
+  const srcSet = getSrcSets(imageJSON.data.attributes.formats,'');
+  expect(srcSet.regular).toEqual('https://tco-strapi-images.s3.amazonaws.com/thumbnail_miku_43caf2b601.jpeg 88w, https://tco-strapi-images.s3.amazonaws.com/small_miku_43caf2b601.jpeg 281w, https://tco-strapi-images.s3.amazonaws.com/medium_miku_43caf2b601.jpeg 422w, https://tco-strapi-images.s3.amazonaws.com/large_miku_43caf2b601.jpeg 563w');
+});
+
+it('should not generate srcsets for gif image', () => {
+  const srcSet = getSrcSets(gifJSON.data.attributes.formats,'');
+  expect(srcSet.regular).toEqual(null);
+});
 
 it('should render jpeg with the correct alt text', () => {
   const { getByAltText } = render(<BasicStrapiJpegImage />);
