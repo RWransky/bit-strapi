@@ -110,6 +110,7 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
       )}
       <Image
         setImageFinished={setImageFinished}
+        imageFinished={imageFinished}
         onLoad={handleLoad}
         onError={handleError}
         onDecode={handleDecode}

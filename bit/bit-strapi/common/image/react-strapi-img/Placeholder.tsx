@@ -35,6 +35,7 @@ const StyledPlaceholder = styled.img<StyledProps>`
   transform-origin: center;
   z-index: 0;
   pointer-events: none;
+  ${(props) => (props.imageFinished ? 0 : 1)};
   ${(props) => props.stylePlaceholder}
 `;
 
