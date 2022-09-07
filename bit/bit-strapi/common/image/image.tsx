@@ -7,7 +7,7 @@ export function StrapiImage({
   preserveAspectRatio = false,
   style: styleOverride,
   ...props
-}: Types.ImageProps) {
+}: Types.StrapiImageProps) {
 
 
   let style = styleOverride;
