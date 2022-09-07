@@ -14,6 +14,11 @@
         "version": "",
         "mainFile": "index.ts",
         "rootDir": "bit-strapi/common/image",
+        "nextVersion": {
+            "version": "1.0.0",
+            "message": "strapi image implementation",
+            "username": "rwransky"
+        },
         "config": {
             "teambit.react/react": {},
             "teambit.envs/envs": {
