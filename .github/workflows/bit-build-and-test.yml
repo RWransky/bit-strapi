@@ -50,13 +50,13 @@ jobs:
             bit config set user.token $BIT_TOKEN
       - name: Install packages using bit
         run: |
-            cd workspace
+            cd bit
             bit install
       - name: Build components
         run: |
-            cd workspace
+            cd bit
             bit compile
       - name: Test components
         run: |
-            cd workspace
+            cd bit
             bit test
