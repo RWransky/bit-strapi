@@ -9,5 +9,22 @@
  */
 
 {
+    "common/image": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "bit-strapi/common/image",
+        "nextVersion": {
+            "version": "1.0.0",
+            "message": "strapi image implementation",
+            "username": "rwransky"
+        },
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
     "$schema-version": "15.0.0"
 }

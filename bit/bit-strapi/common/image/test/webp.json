@@ -1,0 +1,46 @@
+{
+	"data": {
+        "id": 233,
+        "attributes": {
+            "name": "Miku_Mirai.webp",
+            "alternativeText": "2020 Hatsune Miku Magical Mirai",
+            "caption": "2020 Hatsune Miku Magical Mirai",
+            "width": 640,
+            "height": 593,
+            "formats": {
+                "small": {
+                    "ext": ".webp",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/small_Miku_Mirai_9c3a6f634c.webp",
+                    "hash": "small_Miku_Mirai_9c3a6f634c",
+                    "mime": "image/webp",
+                    "name": "small_Miku_Mirai.webp",
+                    "path": null,
+                    "size": 44.16,
+                    "width": 500,
+                    "height": 463
+                },
+                "thumbnail": {
+                    "ext": ".webp",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/thumbnail_Miku_Mirai_9c3a6f634c.webp",
+                    "hash": "thumbnail_Miku_Mirai_9c3a6f634c",
+                    "mime": "image/webp",
+                    "name": "thumbnail_Miku_Mirai.webp",
+                    "path": null,
+                    "size": 8.56,
+                    "width": 168,
+                    "height": 156
+                }
+            },
+            "hash": "Miku_Mirai_9c3a6f634c",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 89.49,
+            "url": "https://tco-strapi-images.s3.amazonaws.com/Miku_Mirai_9c3a6f634c.webp",
+            "previewUrl": null,
+            "provider": "aws-s3",
+            "provider_metadata": null,
+            "createdAt": "2022-09-05T15:12:02.478Z",
+            "updatedAt": "2022-09-05T15:12:02.478Z"
+        }
+    }
+}

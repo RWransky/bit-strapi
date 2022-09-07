@@ -1,0 +1,23 @@
+{
+    "data": {
+        "id": 229,
+        "attributes": {
+            "name": "miku_watermelon.gif",
+            "alternativeText": "Watermelon Miku",
+            "caption": "Watermelon Miku",
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "miku_watermelon_54b7785330",
+            "ext": ".gif",
+            "mime": "image/gif",
+            "size": 4840.28,
+            "url": "https://tco-strapi-images.s3.amazonaws.com/miku_watermelon_54b7785330.gif",
+            "previewUrl": null,
+            "provider": "aws-s3",
+            "provider_metadata": null,
+            "createdAt": "2022-09-05T03:16:51.335Z",
+            "updatedAt": "2022-09-05T03:16:51.335Z"
+        }
+    }
+}
