@@ -3,7 +3,7 @@ import React, { SyntheticEvent } from "react";
 import { ObjectFit } from "./types";
 import useWebp from "./useWebp";
 import StyledImage from "./StyledImage";
-import ImageLoader from "./imageLoader";
+import ImageLoader from "./ImageLoader";
 
 interface Props {
   load: boolean;
