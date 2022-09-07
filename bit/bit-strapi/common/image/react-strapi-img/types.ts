@@ -14,23 +14,25 @@ export type ObjectFit =
   | "scale-down"
   | undefined;
 
-type Ext = 
+export type Ext = 
   ".jpg"
   | ".png"
   | ".tiff"
   | ".webp"
   | ".gif"
   | ".ico"
-  | ".svg";
+  | ".svg"
+  | undefined;
 
-type Mime = 
+export type Mime = 
   "image/jpg" 
   | "image/png" 
   | "image/tiff" 
   | "image/webp"
   | "image/gif" 
   | "image/ico" 
-  | "image/svg";
+  | "image/svg"
+  | undefined;
 
 export interface Format {
   ext?: Ext;
