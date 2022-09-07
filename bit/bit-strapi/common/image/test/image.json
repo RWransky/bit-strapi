@@ -1,0 +1,68 @@
+{
+	"data": {
+        "id": 225,
+        "attributes": {
+            "name": "miku.jpeg",
+            "alternativeText": "Pastel Hatsune Miku",
+            "caption": "Pastel Hatsune Miku",
+            "width": 1080,
+            "height": 1920,
+            "formats": {
+                "large": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/large_miku_43caf2b601.jpeg",
+                    "hash": "large_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "large_miku.jpeg",
+                    "path": null,
+                    "size": 172.81,
+                    "width": 563,
+                    "height": 1000
+                },
+                "small": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/small_miku_43caf2b601.jpeg",
+                    "hash": "small_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "small_miku.jpeg",
+                    "path": null,
+                    "size": 48.15,
+                    "width": 281,
+                    "height": 500
+                },
+                "medium": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/medium_miku_43caf2b601.jpeg",
+                    "hash": "medium_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "medium_miku.jpeg",
+                    "path": null,
+                    "size": 104.79,
+                    "width": 422,
+                    "height": 750
+                },
+                "thumbnail": {
+                    "ext": ".jpeg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/thumbnail_miku_43caf2b601.jpeg",
+                    "hash": "thumbnail_miku_43caf2b601",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_miku.jpeg",
+                    "path": null,
+                    "size": 4.87,
+                    "width": 88,
+                    "height": 156
+                }
+            },
+            "hash": "miku_43caf2b601",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "size": 932.92,
+            "url": "https://tco-strapi-images.s3.amazonaws.com/miku_43caf2b601.jpeg",
+            "previewUrl": null,
+            "provider": "aws-s3",
+            "provider_metadata": null,
+            "createdAt": "2022-09-05T03:06:43.781Z",
+            "updatedAt": "2022-09-05T03:07:22.771Z"
+        }
+    }
+ }

@@ -1,0 +1,68 @@
+{
+	"data": {
+        "id": 237,
+        "attributes": {
+            "name": "high_res_miku.jpg",
+            "alternativeText": "Hatsune Miku 39",
+            "caption": "Hatsune Miku 39",
+            "width": 3840,
+            "height": 2160,
+            "formats": {
+                "large": {
+                    "ext": ".jpg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/large_high_res_miku_3bf1d5eab1.jpg",
+                    "hash": "large_high_res_miku_3bf1d5eab1",
+                    "mime": "image/jpeg",
+                    "name": "large_high_res_miku.jpg",
+                    "path": null,
+                    "size": 138.39,
+                    "width": 1000,
+                    "height": 563
+                },
+                "small": {
+                    "ext": ".jpg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/small_high_res_miku_3bf1d5eab1.jpg",
+                    "hash": "small_high_res_miku_3bf1d5eab1",
+                    "mime": "image/jpeg",
+                    "name": "small_high_res_miku.jpg",
+                    "path": null,
+                    "size": 42.68,
+                    "width": 500,
+                    "height": 281
+                },
+                "medium": {
+                    "ext": ".jpg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/medium_high_res_miku_3bf1d5eab1.jpg",
+                    "hash": "medium_high_res_miku_3bf1d5eab1",
+                    "mime": "image/jpeg",
+                    "name": "medium_high_res_miku.jpg",
+                    "path": null,
+                    "size": 83.38,
+                    "width": 750,
+                    "height": 422
+                },
+                "thumbnail": {
+                    "ext": ".jpg",
+                    "url": "https://tco-strapi-images.s3.amazonaws.com/thumbnail_high_res_miku_3bf1d5eab1.jpg",
+                    "hash": "thumbnail_high_res_miku_3bf1d5eab1",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_high_res_miku.jpg",
+                    "path": null,
+                    "size": 12.62,
+                    "width": 245,
+                    "height": 138
+                }
+            },
+            "hash": "high_res_miku_3bf1d5eab1",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 2102.22,
+            "url": "https://tco-strapi-images.s3.amazonaws.com/high_res_miku_3bf1d5eab1.jpg",
+            "previewUrl": null,
+            "provider": "aws-s3",
+            "provider_metadata": null,
+            "createdAt": "2022-09-06T01:16:03.065Z",
+            "updatedAt": "2022-09-06T01:16:03.065Z"
+        }
+    }
+}
