@@ -1,6 +1,6 @@
 // adapted from react-strapi-img
 import React from "react";
-import { ObjectFit } from "./types";
+import { ObjectFit } from "@rwransky/bit-strapi.common.types";
 import styled from "styled-components";
 
 interface Props {

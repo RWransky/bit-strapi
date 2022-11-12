@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from './react-strapi-img/ReactStrapiImg';
-import * as Types from "./types";
+import {StrapiImageProps} from "@rwransky/bit-strapi.common.types";
 
 export function StrapiImage({
   attributes,
   preserveAspectRatio = false,
   style: styleOverride,
   ...props
-}: Types.StrapiImageProps) {
+}: StrapiImageProps) {
 
 
   let style = styleOverride;

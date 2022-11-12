@@ -1,6 +1,6 @@
 // adapted from react-strapi-img
 import React from "react";
-import { ProviderProps } from "./types";
+import { ProviderProps } from "@rwransky/bit-strapi.common.types";
 import useWebp from "./useWebp";
 import Context from "./context";
 

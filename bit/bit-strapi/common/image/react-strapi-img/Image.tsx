@@ -1,6 +1,6 @@
 // adapted from react-strapi-img
 import React, { SyntheticEvent } from "react";
-import { ObjectFit } from "./types";
+import { ObjectFit } from "@rwransky/bit-strapi.common.types";
 import useWebp from "./useWebp";
 import StyledImage from "./StyledImage";
 import ImageLoader from "./ImageLoader";

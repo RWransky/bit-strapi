@@ -14,10 +14,10 @@ import Image from "./Image";
 import StyledImage from "./StyledImage";
 import Placeholder from "./Placeholder";
 import Wrapper from "./Wrapper";
-import * as Types from "./types";
+import { ImageProps } from "@rwransky/bit-strapi.common.types";
 import ImageProvider from "./ImageProvider";
 
-const ReactStrapiImg: React.FC<Types.ImageProps> = ({
+const ReactStrapiImg: React.FC<ImageProps> = ({
   url,
   formats,
   objectFit,
@@ -146,4 +146,4 @@ const ReactStrapiImg: React.FC<Types.ImageProps> = ({
 };
 
 export default ReactStrapiImg;
-export { Types, ImageProvider };
+export { ImageProvider };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import * as Types from './react-strapi-img/types';
+import { Formats } from '@rwransky/bit-strapi.common.types';
 import { 
   BasicStrapiJpegImage, 
   BasicStrapiGifImage, 
@@ -14,12 +14,12 @@ import gifJSON from './test/gif.json';
 
 describe('Srcset formatting', () => {
   it('should generate srcsets for jpeg image', () => {
-    const srcSet = getSrcSets(imageJSON.data.attributes.formats as Types.Formats,'');
+    const srcSet = getSrcSets(imageJSON.data.attributes.formats as Formats,'');
     expect(srcSet.regular).toEqual('https://tco-strapi-images.s3.amazonaws.com/thumbnail_miku_43caf2b601.jpeg 88w, https://tco-strapi-images.s3.amazonaws.com/small_miku_43caf2b601.jpeg 281w, https://tco-strapi-images.s3.amazonaws.com/medium_miku_43caf2b601.jpeg 422w, https://tco-strapi-images.s3.amazonaws.com/large_miku_43caf2b601.jpeg 563w');
   });
 
   it('should not generate srcsets for gif image', () => {
-    const srcSet = getSrcSets(gifJSON.data.attributes.formats as Types.Formats,'');
+    const srcSet = getSrcSets(gifJSON.data.attributes.formats as Formats,'');
     expect(srcSet.regular).toEqual(null);
   });
 });

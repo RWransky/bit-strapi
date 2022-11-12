@@ -1,5 +1,5 @@
 // adapted from react-strapi-img
-import { Formats, Format, validFormats } from "./types";
+import { Formats, Format, validFormats } from "@rwransky/bit-strapi.common.types";
 import stringEndsWith from "./stringEndsWith";
 
 function getFormat(

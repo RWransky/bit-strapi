@@ -1,6 +1,6 @@
 // adapted from react-strapi-img
 import React from "react";
-import { ContextProps } from "./types";
+import { ContextProps } from "@rwransky/bit-strapi.common.types";
 
 const Context = React.createContext<ContextProps>({
   className: "",
